@@ -14,14 +14,25 @@ h5,
 h6 {
   font-family: "Nunito", sans-serif;
 }
+h2, h3 {
+    color: #b34bda;
+}
+.container {
+    background-color: #201631;
+}
 
-/* =========================
-   Navigation
-========================= */
+/*Navigation*/
 
 #navbar {
   background-color: #2b1e3a;
   padding: 0 0;
+}
+
+/* Logo */
+
+.logo {
+  width: 90px;
+  height: auto;
 }
 
 /* Header */
@@ -45,12 +56,9 @@ h6 {
   margin: auto;
 }
 
-/* Logo */
+/* Right step forward section */
 
-.logo {
-  width: 90px;
-  height: auto;
-}
+/* .right-step */
 
 /* Navigation links */
 
