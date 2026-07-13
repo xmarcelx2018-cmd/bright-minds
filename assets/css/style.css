@@ -14,10 +14,10 @@ h5,
 h6 {
   font-family: "Nunito", sans-serif;
 }
-h2, h3 {
-    color: #b34bda;
+h2,
+h3 {
+  color: #b34bda;
 }
-
 
 /*Navigation*/
 
@@ -40,47 +40,47 @@ h2, h3 {
   min-width: 100%;
 }
 #header h1 {
-    color:#b34bda;
-   
+  color: #b34bda;
 }
-#hero-text{
-    padding:3rem;
+/* Hero text */
+#hero-text {
+  padding: 2rem;
 }
 /* Hero image */
 .hero {
   width: 100%;
+  max-width: 100%;
   height: auto;
-  object-fit: contain;
-  margin: auto;
+  display: block;
 }
 
 /* Improve mental health section */
 #improve {
-    background-color: #201631;
-    min-width: 100%;
-    padding: 4rem ;
+  background-color: #201631;
+  min-width: 100%;
+  padding: 4rem;
 }
 /* Cards */
 .card {
-    background-color: #2b1e3a;
-    border: none;
-    border-radius: 15px;
-    color: white;
+  background-color: #2b1e3a;
+  border: none;
+  border-radius: 15px;
+  color: white;
 }
 
 .card-title {
-    color: #b34bda;
-    font-weight: 700;
+  color: #b34bda;
+  font-weight: 700;
 }
 
 .card-text {
-    color: #e5e5e5;
+  color: #e5e5e5;
 }
 
 .card-img-top {
-    height: 220px;
-    object-fit: cover;
-    width: 100%;
+  height: 220px;
+  object-fit: cover;
+  width: 100%;
 }
 
 /* Navigation links */
@@ -104,7 +104,6 @@ h2, h3 {
 .navbar-toggler {
   border: none;
   background-color: #201631;
-
 }
 
 /* Media queries */
@@ -121,12 +120,18 @@ h2, h3 {
   }
 }
 
-
-
 /* Medium size screens
  */
 @media (max-width: 768px) {
   #header {
-   padding: 4rem 0;
-   }
+    padding: 4rem 0;
+  }
+  #hero-text {
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .hero {
+    margin-top: 2rem;
+  }
 }
