@@ -17,9 +17,7 @@ h6 {
 h2, h3 {
     color: #b34bda;
 }
-.container {
-    background-color: #201631;
-}
+
 
 /*Navigation*/
 
@@ -39,14 +37,14 @@ h2, h3 {
 #header {
   background-color: #201631;
   color: white;
-  min-width: 100vw;
+  min-width: 100%;
 }
 #header h1 {
     color:#b34bda;
    
 }
 #hero-text{
-    padding-left: 40px;
+    padding:3rem;
 }
 /* Hero image */
 .hero {
@@ -56,9 +54,34 @@ h2, h3 {
   margin: auto;
 }
 
-/* Right step forward section */
+/* Improve mental health section */
+#improve {
+    background-color: #201631;
+    min-width: 100%;
+    padding: 4rem ;
+}
+/* Cards */
+.card {
+    background-color: #2b1e3a;
+    border: none;
+    border-radius: 15px;
+    color: white;
+}
 
-/* .right-step */
+.card-title {
+    color: #b34bda;
+    font-weight: 700;
+}
+
+.card-text {
+    color: #e5e5e5;
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+    width: 100%;
+}
 
 /* Navigation links */
 
@@ -80,13 +103,10 @@ h2, h3 {
 
 .navbar-toggler {
   border: none;
+  background-color: #201631;
+
 }
 
-/* White burger icon */
-
-.navbar-toggler-icon {
-  filter: invert(1);
-}
 
 @media (max-width: 991px) {
   #navbar .container-fluid {
