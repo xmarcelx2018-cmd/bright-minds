@@ -22,14 +22,14 @@ h3 {
 /*Navigation*/
 
 #navbar {
-  background-color: #2b1e3a;
+  background-color: #c4a029;
   padding: 0 0;
 }
 
 /* Logo */
 
 .logo {
-  width: 90px;
+  width: 60px;
   height: auto;
 }
 
@@ -40,6 +40,12 @@ h3 {
 }
 #header h1 {
   color: #b34bda;
+}
+#header hr {
+  height: 1px;
+  background-color: #c4a029;
+  border: none;
+  opacity: 1;
 }
 /* Hero text */
 #hero-text {
