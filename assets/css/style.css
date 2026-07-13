@@ -1,56 +1,87 @@
 /* Font styles */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap");
+
+/* Global styles */
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
+}
 
 /* =========================
    Navigation
 ========================= */
 
 #navbar {
-    background-color: #2b1e3a;
-    padding: 0.75rem 0;
-    
+  background-color: #2b1e3a;
+  padding: 0 0;
 }
 
 /* Header */
 #header {
- background-color: #201631;}
+  background-color: #201631;
+  color: white;
+  min-width: 100vw;
+}
+#header h1 {
+    color:#b34bda;
+   
+}
+#hero-text{
+    padding-left: 40px;
+}
+/* Hero image */
+.hero {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin: auto;
+}
 
- /* Logo */
+/* Logo */
 
 .logo {
-    width: 90px;
-    height: auto;
+  width: 90px;
+  height: auto;
 }
 
 /* Navigation links */
 
 .navbar-nav .nav-link {
-    color: white;
-    font-weight: 500;
-    margin-left: 1rem;
+  color: white;
+  font-weight: 500;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
 }
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-    color: #d9d9d9;
+  color: #d9d9d9;
 }
 
 /* Remove Bootstrap border around burger button */
 
 .navbar-toggler {
-    border: none;
+  border: none;
 }
 
 /* White burger icon */
 
 .navbar-toggler-icon {
-    filter: invert(1);
+  filter: invert(1);
 }
 
-
-
- @media (max-width: 991px) {
-  #navbar .container {
+@media (max-width: 991px) {
+  #navbar .container-fluid {
     flex-wrap: wrap;
   }
 
@@ -64,16 +95,7 @@
 
 
 
- 
-/* Large desktops */
-@media (min-width: 1400px) {
-    #header {
-        height: 40vh;
-    }
-}
-
-
- /* Medium size
+/* Medium size screens
  */
 @media (max-width: 768px) {
   #header {
@@ -82,14 +104,3 @@
     background-size: contain;
   }
 }
-
-/* Global styles */
-body {
-  font-family: "Quicksand", sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Nunito", sans-serif;
-}
-
-
