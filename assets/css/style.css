@@ -14,6 +14,7 @@ h5,
 h6 {
   font-family: "Nunito", sans-serif;
 }
+
 h2,
 h3 {
   color: #b34bda;
@@ -22,8 +23,36 @@ h3 {
 /*Navigation*/
 
 #navbar {
-  background-color: #c4a029;
+  background-color: #201631;
   padding: 0 0;
+  border-bottom: 1px solid #c29e29;
+}
+
+/* Navigation links */
+
+.navbar-nav .nav-link {
+  color: #c29e29;
+  font-weight: 650;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.3rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #c29e29;
+  opacity:0.8;
+}
+.navbar-nav .nav-link.active {
+  color: #b34bda;
+}
+/* Navbar Burger */
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler-icon {
+  filter: invert(1);
+
 }
 
 /* Logo */
@@ -43,13 +72,14 @@ h3 {
 }
 #header hr {
   height: 1px;
-  background-color: #c4a029;
+  background-color: #c29e29;
   border: none;
   opacity: 1;
 }
 /* Hero text */
 #hero-text {
   padding: 2rem;
+  font-size:large;
 }
 /* Hero image */
 .hero {
@@ -57,6 +87,8 @@ h3 {
   max-width: 100%;
   height: auto;
   display: block;
+  border: 1px solid #c29e29;
+  border-radius: 10px;
 }
 
 /* Improve mental health section */
@@ -90,28 +122,6 @@ h3 {
   height: 220px;
   object-fit: cover;
   width: 100%;
-}
-
-/* Navigation links */
-
-.navbar-nav .nav-link {
-  color: white;
-  font-weight: 500;
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-  font-family: "Nunito", sans-serif;
-  font-size: 1.2rem;
-}
-
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active {
-  color: #d9d9d9;
-}
-
-/* Remove Bootstrap border around burger button */
-
-.navbar-toggler {
-  border: none;
 }
 
 /* Media queries */
