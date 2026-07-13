@@ -1,0 +1,95 @@
+/* Font styles */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
+
+/* =========================
+   Navigation
+========================= */
+
+#navbar {
+    background-color: #2b1e3a;
+    padding: 0.75rem 0;
+    
+}
+
+/* Header */
+#header {
+ background-color: #201631;}
+
+ /* Logo */
+
+.logo {
+    width: 90px;
+    height: auto;
+}
+
+/* Navigation links */
+
+.navbar-nav .nav-link {
+    color: white;
+    font-weight: 500;
+    margin-left: 1rem;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #d9d9d9;
+}
+
+/* Remove Bootstrap border around burger button */
+
+.navbar-toggler {
+    border: none;
+}
+
+/* White burger icon */
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
+
+ @media (max-width: 991px) {
+  #navbar .container {
+    flex-wrap: wrap;
+  }
+
+  #navbar .navbar-nav {
+    width: 100%;
+    justify-content: center;
+    margin-left: 0;
+    gap: 0.75rem;
+  }
+}
+
+
+
+ 
+/* Large desktops */
+@media (min-width: 1400px) {
+    #header {
+        height: 40vh;
+    }
+}
+
+
+ /* Medium size
+ */
+@media (max-width: 768px) {
+  #header {
+    height: 40vh;
+    min-height: 220px;
+    background-size: contain;
+  }
+}
+
+/* Global styles */
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Nunito", sans-serif;
+}
+
+
