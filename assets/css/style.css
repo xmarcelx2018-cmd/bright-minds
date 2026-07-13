@@ -107,7 +107,7 @@ h2, h3 {
 
 }
 
-
+/* Media queries */
 @media (max-width: 991px) {
   #navbar .container-fluid {
     flex-wrap: wrap;
@@ -127,8 +127,6 @@ h2, h3 {
  */
 @media (max-width: 768px) {
   #header {
-    height: 40vh;
-    min-height: 220px;
-    background-size: contain;
-  }
+   padding: 4rem 0;
+   }
 }
