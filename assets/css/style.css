@@ -78,7 +78,7 @@ h3 {
 
 .logo {
   width: 60px;
-  height: auto;
+  height: 60px;
 }
 
 /* Header */
@@ -126,6 +126,7 @@ h3 {
   display: block;
   border: 1px solid #c29e29;
   border-radius: 30px;
+  object-fit: cover;
 }
 /* Importance section */
 #importance {
