@@ -4,6 +4,7 @@
 /* Global styles */
 body {
   font-family: "Quicksand", sans-serif;
+  scroll-padding-top: 80px;
 }
 
 h1,
@@ -15,12 +16,15 @@ h6 {
   font-family: "Nunito", sans-serif;
 }
 /* Important rule to override bootstrap headings */
-h2{
+h2 {
   font-weight: 400 !important;
 }
 h2,
 h3 {
   color: #b34bda;
+}
+.section {
+  min-height: 700px;
 }
 
 /*Navigation*/
@@ -33,8 +37,10 @@ h3 {
 /* Makes navbar not cover parts of the section */
 #header,
 #importance,
-#improve {
-  scroll-margin-top: 345px;
+#improve,
+#helping-others,
+#contact {
+  scroll-margin-top: 80px;
 }
 
 /* Navigation links */
@@ -104,7 +110,7 @@ h3 {
   padding-right: 0.1em;
 }
 .fa-hand-holding-heart {
- padding-left: 0.3em;
+  padding-left: 0.3em;
   padding-right: 0.1em;
 }
 .fa-heart {
@@ -114,7 +120,6 @@ h3 {
 .fa-comments {
   padding-left: 0.3em;
   padding-right: 0.1em;
-  
 }
 .helping-icons {
   color: #b34bda;
@@ -136,7 +141,8 @@ h3 {
 /* Importance section */
 #importance {
   background-color: #201631;
-  min-height: 450px;
+  min-height: 650px;
+  padding: 4rem 0;
 }
 
 #importance .row {
@@ -176,7 +182,7 @@ h3 {
 /* Improve mental health section */
 #improve {
   background-color: #201631;
-  padding: 1rem 0;
+  padding: 4rem 0;
 }
 #improve hr {
   height: 1px;
@@ -222,7 +228,7 @@ h3 {
 }
 
 #helping-others h3 {
-  text-align:start;
+  text-align: start;
   color: #c29e29;
   padding-top: 10px;
 }
@@ -233,7 +239,38 @@ h3 {
   border: none;
   opacity: 1;
 }
+/* Contact details */
 
+#contact {
+  background-color: #201631;
+  color: white;
+  font-size: 18px;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
+/* Contact boxes */
+.social-box {
+  display: inline-block;
+  background-color: #c29e29;
+  color: #201631;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  margin-top: 0.7rem;
+  opacity: 0.9;
+}
+.social-box:hover {
+  opacity: 0.7;
+}
+
+/* Style line under header */
+#contact hr {
+  height: 1px;
+  background-color: #c29e29;
+  border: none;
+  opacity: 1;
+}
 /* Media queries */
 
 /* Medium size screens*/
@@ -266,10 +303,6 @@ h3 {
     text-align: left;
     padding-left: 2rem;
   }
-  /* Make navbar not obstruct section content on tablet view when choosing navigation link */
-  #importance {
-    scroll-margin-top: 360px;
-  }
 }
 
 /* mobile devices */
@@ -287,7 +320,7 @@ h3 {
   }
   /* Make navbar not obstruct section content on tablet view when choosing navigation link */
   #improve {
-    scroll-margin-top: 336px;
+    scroll-margin-top: 120px;
     padding-top: 3rem;
   }
   #helping-others {

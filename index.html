@@ -15,7 +15,7 @@
     <link href="assets/css/style.css" rel="stylesheet" />
   </head>
   <!-- Detects what section user is on in navigation -->
-  <body class="position-relative" data-bs-spy="scroll" data-bs-target="#navbar">
+  <body class="position-relative" tabindex="0">
     <!-- Navigation -->
     <nav id="navbar" class="navbar navbar-expand-lg sticky-top">
       <div class="container-fluid">
@@ -40,7 +40,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#header"
+              <a class="nav-link" href="#header"
                 ><i class="fa-regular fa-house"></i>Home</a
               >
             </li>
@@ -55,10 +55,14 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#helping-others"><i class="fa-regular fa-handshake"></i>Helping others</a>
+              <a class="nav-link" href="#helping-others"
+                ><i class="fa-regular fa-handshake"></i>Helping others</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#contact"
+                ><i class="fa-regular fa-address-book"></i>Contact details</a
+              >
             </li>
           </ul>
         </div>
@@ -69,9 +73,7 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="hero-text col-12 col-xl-6 text-center text-xl-start">
-            <h1 class="display-3">
-              Bright Minds</i>
-            </h1>
+            <h1 class="display-3">Bright Minds</h1>
             <hr />
             <h2 class="lead display-6 sub-heading-color">
               Your mental health and well-being
@@ -98,7 +100,7 @@
       </div>
     </header>
     <!-- Importance section -->
-    <section id="importance">
+    <section id="importance" class="section">
       <div class="container">
         <div class="row align-items-center">
           <div class="hero-text col-12 col-xl-6 text-center text-xl-start">
@@ -231,86 +233,109 @@
       </div>
     </section>
     <!-- Helping others section -->
-     <section id="helping-others" class="section">
+    <section id="helping-others" class="section">
       <div class="container">
-          <!-- Section heading -->
-    <div class="col-12 text-center">
-      <h2 class="display-5">
-        How You Can Help Others
-        </i>
-      </h2>
-      <hr>
-    </div>
+        <!-- Section heading -->
+        <div class="col-12 text-center">
+          <h2 class="display-5">How You Can Help Others</h2>
+          <hr>
+        </div>
         <div class="row">
           <div class="col-12">
-           <h3>
-      Listen Without Judgement
-    </h3>
-    <p>
-      Taking the time to listen can make someone feel valued and understood.
-      Offering a safe space where people can express their thoughts and
-      feelings without fear of criticism can help build trust and provide
-      emotional support.
-    </p>
-  </div>
+            <h3>Listen Without Judgement</h3>
+            <p>
+              Taking the time to listen can make someone feel valued and
+              understood. Offering a safe space where people can express their
+              thoughts and feelings without fear of criticism can help build
+              trust and provide emotional support.
+            </p>
+          </div>
 
-  <div class="support-item">
-    <h3>
-      Check In Regularly
-    </h3>
-    <p>
-      A simple message, phone call, or conversation can have a positive impact
-      on someone's wellbeing. Showing that you care reminds others that they
-      are not alone and that support is available when they need it.
-    </p>
-  </div>
+          <div class="support-item">
+            <h3>Check In Regularly</h3>
+            <p>
+              A simple message, phone call, or conversation can have a positive
+              impact on someone's wellbeing. Showing that you care reminds
+              others that they are not alone and that support is available when
+              they need it.
+            </p>
+          </div>
 
-  <div class="support-item">
-    <h3>
-      Offer Support and Encouragement
-    </h3>
-    <p>
-      Small acts of kindness can make a big difference. Encouraging someone,
-      celebrating their progress, and reminding them of their strengths can
-      help improve confidence and motivation during challenging times.
-    </p>
-  </div>
+          <div class="support-item">
+            <h3>Offer Support and Encouragement</h3>
+            <p>
+              Small acts of kindness can make a big difference. Encouraging
+              someone, celebrating their progress, and reminding them of their
+              strengths can help improve confidence and motivation during
+              challenging times.
+            </p>
+          </div>
 
-  <div class="support-item">
-    <h3>
-      Encourage Professional Help
-    </h3>
-    <p>
-      Supporting someone does not mean having all the answers. Helping others
-      recognise when they may need additional support and encouraging them to
-      speak with a professional can be an important step towards improving
-      their mental health.
-    </p>
-  </div>
+          <div class="support-item">
+            <h3>Encourage Professional Help</h3>
+            <p>
+              Supporting someone does not mean having all the answers. Helping
+              others recognise when they may need additional support and
+              encouraging them to speak with a professional can be an important
+              step towards improving their mental health.
+            </p>
+          </div>
         </div>
+      </div>
+    </section>
+    <!-- Contact details -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="col-12 text-center">
+          <h2 class="display-5">Contact details</h2>
+          <hr>
+          <p class="contact-text">
+        Follow Bright Minds and connect with our community
+      </p>
+    </div>
+
+    <div class="row justify-content-center g-4">
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <a href="https://www.facebook.com/" class="social-box">
+          <i class="fa-brands fa-facebook"></i>
+          <span>Facebook</span>
+        </a>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <a href="https://www.instagram.com/" class="social-box">
+          <i class="fa-brands fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <a href="https://twitter.com/" class="social-box">
+          <i class="fa-brands fa-x-twitter"></i>
+          <span>Twitter</span>
+        </a>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <a href="mailto:example@email.com" class="social-box">
+          <i class="fa-solid fa-envelope"></i>
+          <span>brightminds@gmail.org</span>
+        </a>
+      </div>
+    </div>
       </div>
       
 
+       
 
 
 
+       
+     
+      
+    </section>
 
-
-
-
-          </div>
-
-
-
-
-
-        </div>
-
-
-
-
-      </div>
-     </section>
     <!-- Fontawesome kit link -->
     <script
       src="https://kit.fontawesome.com/bab6762cee.js"
@@ -322,20 +347,41 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    
-    <!-- Javascript for burger menu to collapse after picking a navigation link -->
-    <script>
-      const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-      const navbarCollapse = document.querySelector(".navbar-collapse");
 
-      navLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
-          if (bsCollapse) {
-            bsCollapse.hide();
-          }
-        });
-      });
-    </script>
+   <!-- Javascript for ScrollSpy and burger menu -->
+<script>
+  // Enable Bootstrap ScrollSpy
+  const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+    target: "#navbar",
+    offset: 250
+  });
+
+
+  // Close mobile navbar after clicking a link
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  const navbarCollapse = document.querySelector(".navbar-collapse");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+
+      if (bsCollapse) {
+        bsCollapse.hide();
+      }
+
+      setTimeout(() => {
+        scrollSpy.refresh();
+      }, 300);
+    });
+  });
+
+
+  // Refresh ScrollSpy after loading
+  window.addEventListener("load", () => {
+    scrollSpy.refresh();
+  });
+</script>
+
+  
   </body>
 </html>
