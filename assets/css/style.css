@@ -185,6 +185,13 @@ h3 {
   border-radius: 15px;
   color: white;
   font-size: 18px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  border-color: #e3c24f;
 }
 
 .card-title {
@@ -246,9 +253,13 @@ h3 {
   font-weight: 700;
   margin-top: 0.7rem;
   opacity: 0.9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
 }
 .social-box:hover {
-  opacity: 0.7;
+  opacity: 0.85;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.22);
 }
 
 /* Style line under header */
@@ -257,6 +268,20 @@ h3 {
   background-color: #c29e29;
   border: none;
   opacity: 1;
+}
+/* Footer */
+#footer {
+  background-color: #140f23;
+  color: #f4f2f8;
+  padding: 1.25rem 1rem 1.5rem;
+  border-top: 1px solid #c29e29;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+}
+
+#footer p {
+  margin-bottom: 0;
 }
 /* Media queries */
 
@@ -303,29 +328,31 @@ h3 {
 /* mobile devices */
 @media (max-width: 768px) {
   html {
-    scroll-padding-top: 170px;
+    scroll-padding-top: 160px;
   }
 
   .section {
-    scroll-margin-top: 170px;
+    scroll-margin-top: 160px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   #header {
-    padding: 1.5rem 0 1rem;
+    padding: 1.25rem 0 0.75rem;
   }
   .hero-text {
-    padding: 1.5rem;
+    padding: 1.25rem;
     text-align: center;
   }
 
   .hero {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   }
-  /* Make navbar not obstruct section content on tablet view when choosing navigation link */
+
   #improve {
-    padding-top: 3rem;
+    padding-top: 2.5rem;
   }
   #helping-others {
-    padding-top: 3rem;
+    padding-top: 2.5rem;
   }
 }
