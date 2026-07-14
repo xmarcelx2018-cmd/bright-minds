@@ -81,13 +81,14 @@ h3 {
   border: none;
   opacity: 1;
 }
-/* Brain icon in header */
+/* Icons */
 .fa-brain {
     color: #c29e29;
     font-size: 0.8em;
     padding-left: 0.6em;
-    
-
+}
+.fa-house {
+    padding-right: 3px;
 }
 /* Hero text */
 #hero-text {
