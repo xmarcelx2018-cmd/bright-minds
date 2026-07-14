@@ -14,7 +14,10 @@ h5,
 h6 {
   font-family: "Nunito", sans-serif;
 }
-
+/* Important rule to override bootstrap headings */
+h2{
+  font-weight: 400 !important;
+}
 h2,
 h3 {
   color: #b34bda;
@@ -149,6 +152,7 @@ h3 {
 }
 #importance p {
   color: white;
+  font-size: 20px;
 }
 #importance .hero-text {
   padding-top: 0;
@@ -156,6 +160,7 @@ h3 {
 /* Importance list */
 .importance-list {
   color: white;
+  font-size: 18px;
 }
 /* Importance image */
 .importance-image {
@@ -185,6 +190,7 @@ h3 {
   border: 1px solid #c4a029;
   border-radius: 15px;
   color: white;
+  font-size: 18px;
 }
 
 .card-title {
@@ -282,5 +288,9 @@ h3 {
   /* Make navbar not obstruct section content on tablet view when choosing navigation link */
   #improve {
     scroll-margin-top: 336px;
+    padding-top: 3rem;
+  }
+  #helping-others {
+    padding-top: 3rem;
   }
 }
