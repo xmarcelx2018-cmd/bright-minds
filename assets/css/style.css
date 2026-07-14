@@ -74,11 +74,20 @@ h3 {
 #header h1 {
   color: #b34bda;
 }
+/* Style line under header */
 #header hr {
   height: 1px;
   background-color: #c29e29;
   border: none;
   opacity: 1;
+}
+/* Brain icon in header */
+.fa-brain {
+    color: #c29e29;
+    font-size: 0.8em;
+    padding-left: 0.6em;
+    
+
 }
 /* Hero text */
 #hero-text {
@@ -98,7 +107,7 @@ h3 {
 /* Improve mental health section */
 #improve {
   background-color: #201631;
-  padding: 4rem 0;
+  padding: 1rem 0;
 }
 #improve hr {
   height: 1px;
