@@ -2,9 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap");
 
 /* Global styles */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+@media (max-width: 991px) {
+  html {
+    scroll-padding-top: 150px;
+  }
+}
+
 body {
   font-family: "Quicksand", sans-serif;
-  scroll-padding-top: 80px;
 }
 
 h1,
@@ -15,16 +25,20 @@ h5,
 h6 {
   font-family: "Nunito", sans-serif;
 }
-/* Important rule to override bootstrap headings */
+
 h2 {
   font-weight: 400 !important;
+  color: #b34bda;
 }
-h2,
+
 h3 {
   color: #b34bda;
 }
+
 .section {
-  min-height: 700px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  scroll-margin-top: 90px;
 }
 
 /*Navigation*/
@@ -34,15 +48,6 @@ h3 {
   padding: 0 0;
   border-bottom: 1px solid #c29e29;
 }
-/* Makes navbar not cover parts of the section */
-#header,
-#importance,
-#improve,
-#helping-others,
-#contact {
-  scroll-margin-top: 80px;
-}
-
 /* Navigation links */
 
 .navbar-nav .nav-link {
@@ -81,7 +86,6 @@ h3 {
   background-color: #201631;
   color: white;
   padding: 0px;
-  min-height: 600px;
 }
 #header h1 {
   color: #c29e29;
@@ -109,21 +113,6 @@ h3 {
   padding-left: 0.3em;
   padding-right: 0.1em;
 }
-.fa-hand-holding-heart {
-  padding-left: 0.3em;
-  padding-right: 0.1em;
-}
-.fa-heart {
-  padding-left: 0.3em;
-  padding-right: 0.1em;
-}
-.fa-comments {
-  padding-left: 0.3em;
-  padding-right: 0.1em;
-}
-.helping-icons {
-  color: #b34bda;
-}
 /* Hero text */
 .hero-text {
   padding: 2rem;
@@ -141,7 +130,6 @@ h3 {
 /* Importance section */
 #importance {
   background-color: #201631;
-  min-height: 650px;
   padding: 4rem 0;
 }
 
@@ -222,7 +210,6 @@ h3 {
 #helping-others {
   background-color: #201631;
   color: white;
-  min-height: 700px;
   padding-top: 6rem;
   font-size: 20px;
 }
@@ -275,6 +262,14 @@ h3 {
 
 /* Medium size screens*/
 @media (max-width: 991px) {
+  .section {
+    scroll-margin-top: 150px;
+  }
+
+  #header {
+    padding-top: 2rem;
+  }
+
   #navbar .container-fluid {
     flex-wrap: wrap;
   }
@@ -307,8 +302,16 @@ h3 {
 
 /* mobile devices */
 @media (max-width: 768px) {
+  html {
+    scroll-padding-top: 170px;
+  }
+
+  .section {
+    scroll-margin-top: 170px;
+  }
+
   #header {
-    padding: 1rem 0;
+    padding: 1.5rem 0 1rem;
   }
   .hero-text {
     padding: 1.5rem;
@@ -320,7 +323,6 @@ h3 {
   }
   /* Make navbar not obstruct section content on tablet view when choosing navigation link */
   #improve {
-    scroll-margin-top: 120px;
     padding-top: 3rem;
   }
   #helping-others {
