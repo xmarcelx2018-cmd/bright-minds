@@ -15,13 +15,10 @@ h6 {
   font-family: "Nunito", sans-serif;
 }
 
-h2 {
+h2,
+h3 {
   color: #b34bda;
 }
-h3 {
-    color: #c29e29;
-}
-
 
 /*Navigation*/
 
@@ -30,7 +27,8 @@ h3 {
   padding: 0 0;
   border-bottom: 1px solid #c29e29;
 }
-#header,
+/* Makes navbar not cover parts of the section */
+#header, #importance,
 #improve {
   scroll-margin-top: 345px;
 }
@@ -48,7 +46,7 @@ h3 {
 
 .navbar-nav .nav-link:hover {
   color: #c29e29;
-  opacity:0.8;
+  opacity: 0.8;
 }
 .navbar-nav .nav-link.active {
   color: #b34bda;
@@ -59,7 +57,6 @@ h3 {
 }
 .navbar-toggler-icon {
   filter: invert(1);
-
 }
 
 /* Logo */
@@ -73,10 +70,11 @@ h3 {
 #header {
   background-color: #201631;
   color: white;
-  padding: 0px
+  padding: 0px;
+  min-height: 600px;
 }
 #header h1 {
-  color: #b34bda;
+  color: #c29e29;
 }
 /* Style line under header */
 #header hr {
@@ -86,27 +84,66 @@ h3 {
   opacity: 1;
 }
 /* Icons */
-.fa-brain {
-    color: #c29e29;
-    font-size: 0.8em;
-    padding-left: 0.6em;
-}
 .fa-house {
-    padding-right: 3px;
+  padding-right: 3px;
+}
+.fa-circle-exclamation {
+  color: #c29e29;
+  padding-left: 0.6em;
+}
+.fa-seedling {
+  padding-left: 0.6em;
+  color: #c29e29;
 }
 /* Hero text */
-#hero-text {
+.hero-text {
   padding: 2rem;
-  font-size:large;
+  font-size: large;
 }
 /* Hero image */
 .hero {
   width: 100%;
   max-width: 100%;
-  height: auto;
+  height: 400px;
   display: block;
   border: 1px solid #c29e29;
-  border-radius: 300px;
+  border-radius: 30px;
+}
+/* Importance section */
+#importance {
+  background-color: #201631;
+  min-height: 450px;
+}
+
+#importance .row {
+  display: flex;
+  flex-direction: row-reverse;
+}
+#importance hr {
+  height: 1px;
+  background-color: #c29e29;
+  border: none;
+  opacity: 1;
+}
+#importance p {
+  color: white;
+}
+#importance .hero-text {
+    padding-top: 0;
+}
+/* Importance list */
+.importance-list {
+  color: white;
+}
+/* Importance image */
+.importance-image {
+  width: 100%;
+  max-width: 550px;
+  height: 170px;
+  object-fit: cover;
+  border: 1px solid #c29e29;
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
 }
 
 /* Improve mental health section */
@@ -147,6 +184,17 @@ h3 {
   object-fit: cover;
   width: 100%;
 }
+/* Helping others section */
+#helping-others {
+  background-color: #201631;
+  color: white;
+  min-height: 700px;
+  padding-top: 6rem;
+}
+
+#helping-others h3 {
+  text-align: center;
+}
 
 /* Media queries */
 
@@ -162,19 +210,50 @@ h3 {
     margin-left: 0;
     gap: 0.75rem;
   }
-}
+  .hero {
+    margin-bottom: 2rem;
+  }
+  .importance-image {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+    #importance h3 {
+    text-align: center;
+  }
+    .importance-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    text-align: left;
+    padding-left: 2rem;
+  }
+  /* Make navbar not obstruct section content on tablet view when choosing navigation link */
+  #importance {
+    scroll-margin-top: 360px;
+  }
+
+
+  }
+
 
 /* mobile devices */
 @media (max-width: 768px) {
   #header {
     padding: 1rem 0;
   }
-  #hero-text {
+  .hero-text {
     padding: 1.5rem;
     text-align: center;
   }
 
   .hero {
     margin-top: 2rem;
+
   }
+  /* Make navbar not obstruct section content on tablet view when choosing navigation link */
+  #improve {
+    scroll-margin-top: 336px;
+  
+}
 }

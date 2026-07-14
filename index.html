@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bright Minds│Home</title>
     <!-- Bootstrap CSS -->
     <link
@@ -10,11 +10,12 @@
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
-    >
+    />
     <!-- Custom CSS -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet" />
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#navbar">
+  <!-- Detects what section user is on in navigation -->
+  <body class="position-relative" data-bs-spy="scroll" data-bs-target="#navbar">
     <!-- Navigation -->
     <nav id="navbar" class="navbar navbar-expand-lg sticky-top">
       <div class="container-fluid">
@@ -23,7 +24,7 @@
             class="logo"
             src="assets/images/bright-minds.png"
             alt="Bright Minds logo"
-      ></a>
+        /></a>
         <!-- Burger navigation -->
         <button
           class="navbar-toggler"
@@ -44,10 +45,14 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#improve"><i class="fa-regular fa-lightbulb"></i>Ways to improve</a>
+              <a class="nav-link" href="#importance"
+                ><i class="fa-regular fa-star"></i>Importance</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#improve"
+                ><i class="fa-regular fa-lightbulb"></i>Ways to improve</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
@@ -63,11 +68,11 @@
     <header id="header">
       <div class="container">
         <div class="row align-items-center">
-          <div id="hero-text" class="col-12 col-xl-6 text-center text-xl-start">
+          <div class="hero-text col-12 col-xl-6 text-center text-xl-start">
             <h1 class="display-3">
-              Bright Minds<i class="fa-solid fa-brain"></i>
+              Bright Minds</i>
             </h1>
-            <hr>
+            <hr />
             <h2 class="lead display-6 sub-heading-color">
               Your mental health and well-being
             </h2>
@@ -85,20 +90,66 @@
           <div class="col-12 col-xl-6">
             <img
               class="hero"
-              src="assets/images/yellow-heart.png"
+              src="assets/images/mental-health.png"
               alt="Letters aligned to spell out 'Not going down without a fight'"
-            >
+            />
           </div>
         </div>
       </div>
     </header>
+    <!-- Importance section -->
+    <section id="importance">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="hero-text col-12 col-xl-6 text-center text-xl-start">
+            <h2 class="lead display-6 sub-heading-color">
+              Why it's important<i class="fa-solid fa-circle-exclamation"></i>
+            </h2>
+            <hr />
+            <p class="my-4">
+              Mental health influences every aspect of our daily lives, from our
+              ability to concentrate and make decisions to how we respond to
+              change and overcome difficulties. Prioritising your wellbeing can
+              improve confidence, resilience, and overall quality of life,
+              allowing you to thrive both personally and professionally. By
+              learning about mental health and recognising when support may be
+              needed, we can all take positive steps towards building healthier
+              habits and a positive future.
+            </p>
+          </div>
+          <div class="col-12 col-xl-6 align-self-start">
+            <img
+              class="importance-image"
+              src="assets/images/yellow-heart.png"
+              alt="Letters aligned to spell out 'Not going down without a fight'"
+            />
+            <h3>
+              Benefits of focusing on mental health<i
+                class="fa-solid fa-seedling"
+              ></i>
+            </h3>
+            <hr />
+
+            <ul class="importance-list text-start">
+              <li>Better focus, concentration, and decision-making</li>
+              <li>Increased confidence and self-awareness</li>
+              <li>
+                Stronger relationships and better communication with others
+              </li>
+              <li>Better coping skills during difficult situations</li>
+              <li>Improved sleep quality and daily energy levels</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Improving mental health -->
     <section id="improve" class="section">
       <div class="container">
         <div class="row g-4">
           <div class="col-12 text-center">
             <h2 class="display-5">Ways to improve your mental health</h2>
-            <hr>
+            <hr />
           </div>
 
           <div class="col-12 col-md-6 col-xl-3">
@@ -107,7 +158,7 @@
                 src="assets/images/peace.png"
                 class="card-img-top"
                 alt="A person holding a cup of flowers"
-              >
+              />
               <div class="card-body">
                 <h3 class="card-title">Practice mindfulness</h3>
                 <p class="card-text">
@@ -126,7 +177,7 @@
                 src="assets/images/jogging.png"
                 class="card-img-top"
                 alt="Woman going for a jog"
-              >
+              />
               <div class="card-body">
                 <h3 class="card-title">Stay active</h3>
                 <p class="card-text">
@@ -145,7 +196,7 @@
                 src="assets/images/connections.png"
                 class="card-img-top"
                 alt="Two people shaking hands"
-              >
+              />
               <div class="card-body">
                 <h3 class="card-title">Build Connections</h3>
                 <p class="card-text">
@@ -163,7 +214,7 @@
                 src="assets/images/self-care.png"
                 class="card-img-top"
                 alt="Woman sitting "
-              >
+              />
               <div class="card-body">
                 <h3 class="card-title">Prioritise Self-Care</h3>
                 <p class="card-text">
@@ -179,21 +230,91 @@
         </div>
       </div>
     </section>
-<!-- Javascript for burger menu to collapse after picking a navigation link -->
-    <script>
-  const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-  const navbarCollapse = document.querySelector('.navbar-collapse');
+    <!-- Helping others section -->
+     <section id="helping-others" class="section">
+      <div class="container">
+          <!-- Section heading -->
+    <div class="col-12 text-center">
+      <h2>
+        How You Can Help Others
+        <i class="fa-solid fa-hands-holding-heart"></i>
+      </h2>
+      <hr>
+    </div>
+        <div class="row">
+          <div class="col-12">
+           <h3>
+      <i class="fa-solid fa-comments"></i>
+      Listen Without Judgement
+    </h3>
+    <p>
+      Taking the time to listen can make someone feel valued and understood.
+      Offering a safe space where people can express their thoughts and
+      feelings without fear of criticism can help build trust and provide
+      emotional support.
+    </p>
+  </div>
 
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
-      if (bsCollapse) {
-        bsCollapse.hide();
-      }
-    });
-  });
-</script>
+  <div class="support-item">
+    <h3>
+      <i class="fa-solid fa-heart"></i>
+      Check In Regularly
+    </h3>
+    <p>
+      A simple message, phone call, or conversation can have a positive impact
+      on someone's wellbeing. Showing that you care reminds others that they
+      are not alone and that support is available when they need it.
+    </p>
+  </div>
 
+  <div class="support-item">
+    <h3>
+      <i class="fa-solid fa-hand-holding-heart"></i>
+      Offer Support and Encouragement
+    </h3>
+    <p>
+      Small acts of kindness can make a big difference. Encouraging someone,
+      celebrating their progress, and reminding them of their strengths can
+      help improve confidence and motivation during challenging times.
+    </p>
+  </div>
+
+  <div class="support-item">
+    <h3>
+      <i class="fa-solid fa-seedling"></i>
+      Encourage Professional Help
+    </h3>
+    <p>
+      Supporting someone does not mean having all the answers. Helping others
+      recognise when they may need additional support and encouraging them to
+      speak with a professional can be an important step towards improving
+      their mental health.
+    </p>
+  </div>
+        </div>
+      </div>
+      
+
+
+
+
+
+
+
+
+          </div>
+
+
+
+
+
+        </div>
+
+
+
+
+      </div>
+     </section>
     <!-- Fontawesome kit link -->
     <script
       src="https://kit.fontawesome.com/bab6762cee.js"
@@ -205,5 +326,20 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    
+    <!-- Javascript for burger menu to collapse after picking a navigation link -->
+    <script>
+      const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+      const navbarCollapse = document.querySelector(".navbar-collapse");
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+          if (bsCollapse) {
+            bsCollapse.hide();
+          }
+        });
+      });
+    </script>
   </body>
 </html>
