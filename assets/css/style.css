@@ -28,7 +28,8 @@ h3 {
   border-bottom: 1px solid #c29e29;
 }
 /* Makes navbar not cover parts of the section */
-#header, #importance,
+#header,
+#importance,
 #improve {
   scroll-margin-top: 345px;
 }
@@ -95,6 +96,26 @@ h3 {
   padding-left: 0.6em;
   color: #c29e29;
 }
+.fa-handshake {
+  padding-left: 0.3em;
+  padding-right: 0.1em;
+}
+.fa-hand-holding-heart {
+ padding-left: 0.3em;
+  padding-right: 0.1em;
+}
+.fa-heart {
+  padding-left: 0.3em;
+  padding-right: 0.1em;
+}
+.fa-comments {
+  padding-left: 0.3em;
+  padding-right: 0.1em;
+  
+}
+.helping-icons {
+  color: #b34bda;
+}
 /* Hero text */
 .hero-text {
   padding: 2rem;
@@ -119,6 +140,7 @@ h3 {
   display: flex;
   flex-direction: row-reverse;
 }
+/* Style line under header */
 #importance hr {
   height: 1px;
   background-color: #c29e29;
@@ -129,7 +151,7 @@ h3 {
   color: white;
 }
 #importance .hero-text {
-    padding-top: 0;
+  padding-top: 0;
 }
 /* Importance list */
 .importance-list {
@@ -190,10 +212,20 @@ h3 {
   color: white;
   min-height: 700px;
   padding-top: 6rem;
+  font-size: 20px;
 }
 
 #helping-others h3 {
-  text-align: center;
+  text-align:start;
+  color: #c29e29;
+  padding-top: 10px;
+}
+/* Style line under header */
+#helping-others hr {
+  height: 1px;
+  background-color: #c29e29;
+  border: none;
+  opacity: 1;
 }
 
 /* Media queries */
@@ -218,10 +250,10 @@ h3 {
     margin-right: auto;
     display: block;
   }
-    #importance h3 {
+  #importance h3 {
     text-align: center;
   }
-    .importance-list {
+  .importance-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
@@ -232,10 +264,7 @@ h3 {
   #importance {
     scroll-margin-top: 360px;
   }
-
-
-  }
-
+}
 
 /* mobile devices */
 @media (max-width: 768px) {
@@ -249,11 +278,9 @@ h3 {
 
   .hero {
     margin-top: 2rem;
-
   }
   /* Make navbar not obstruct section content on tablet view when choosing navigation link */
   #improve {
     scroll-margin-top: 336px;
-  
-}
+  }
 }
