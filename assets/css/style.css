@@ -255,12 +255,73 @@ h3 {
   margin-top: 0.7rem;
   opacity: 0.9;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+  text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
 }
 .social-box:hover {
   opacity: 0.85;
   transform: translateY(-2px);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.22);
+}
+/* Contact Form */
+.contact-form {
+  background-color: #2b1e3a;
+  border: 1px solid #c29e29;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.contact-form .form-label {
+  color: #f4f2f8;
+  font-weight: 700;
+}
+
+.contact-form .form-control {
+  background-color: #f8f5ff;
+  border: 1px solid #c4a029;
+  color: #201631;
+}
+
+.contact-form .form-control::placeholder {
+  color: #6b6478;
+}
+
+.contact-form .form-control:focus {
+  border-color: #e3c24f;
+  box-shadow: 0 0 0 0.2rem rgba(194, 158, 41, 0.25);
+}
+
+.contact-form .form-check-input {
+  background-color: #f8f5ff;
+  border-color: #c4a029;
+}
+
+.contact-form .form-check-input:checked {
+  background-color: #b34bda;
+  border-color: #b34bda;
+}
+
+.contact-form .form-check-label {
+  color: #e5e5e5;
+}
+
+.contact-form .btn-primary {
+  background-color: #c29e29;
+  border-color: #c29e29;
+  color: #201631;
+  font-weight: 700;
+}
+
+.contact-form .btn-primary:hover {
+  background-color: #e3c24f;
+  border-color: #e3c24f;
+  color: #201631;
+}
+
+#emailHelp {
+  color: #e5e5e5;
+  padding-top: 10px;
 }
 
 /* Style line under header */
