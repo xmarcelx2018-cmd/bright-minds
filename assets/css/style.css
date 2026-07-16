@@ -242,6 +242,7 @@ h3 {
   font-size: 18px;
   padding-top: 2rem;
   padding-bottom: 6rem;
+  overflow-x: hidden;
 }
 /* Contact boxes */
 .social-box {
@@ -263,14 +264,16 @@ h3 {
   transform: translateY(-2px);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.22);
 }
+
 /* Contact Form */
 .contact-form {
   background-color: #2b1e3a;
   border: 1px solid #c29e29;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  width:100%;
   max-width: 720px;
   margin: 0 auto;
-}
+  box-sizing: border-box;  overflow: hidden;}
 
 .contact-form .form-label {
   color: #f4f2f8;
@@ -353,6 +356,11 @@ h3 {
     scroll-margin-top: 150px;
   }
 
+  .contact-form {
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+  }
+
   #header {
     padding-top: 2rem;
   }
@@ -416,5 +424,19 @@ h3 {
   }
   #helping-others {
     padding-top: 2.5rem;
+  }
+  .social-box {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.25rem;
+    height: 3.25rem;
+    padding: 0 20px;
+    margin: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .social-box span {
+    display: none;
   }
 }
